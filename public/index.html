@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main App</title>
+    <link rel="stylesheet" href="output.css">
+
+</head>
+<body>
+
+
+    <!--Top Navigation bar-->
+
+    <div class="  py-2 px-4 w-full bg-blue-50 h-14">
+        <div class="flex  justify-between">
+            <div class="w-2/5 flex items-center ">
+                <a class="flex flex-row items-center space-x-4">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+                          </svg>
+                    </div>
+                    <div class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                    </div>
+                    <h2 class="font-medium text-lg text-gray-600">Mail</h2>
+                </a>
+            </div>
+            <div class="w-full">
+                <input type="text" placeholder="Search" class="p-2 w-full bg-blue-100 rounded-lg focus:outline-none">
+            </div>
+            <div class="w-2/5 flex justify-end space-x-4 items-center">
+                <a href="#" >
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </a> 
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                      </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                          </svg>
+                    </a>
+
+                    <a href="">
+                        <img src="../src/imgs/team_2.jpg" alt="" class="w-8 h-8 rounded-full">
+                    </a>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Top Navigation bar ends -->
+
+
+      
+            <!--content goes here..-->
+
+      <div class="flex flex-row h-screen bg-blue-50 ">
+
+        <!--Sidebar goes here..-->
+
+          <div  class="flex flex-col w-1/5 px-4 ">
+
+            
+
+          <div class=" flex flex-col space-y-4 ">
+
+
+              <a class="flex flex-row items-center space-x-4 mt-4 mb-2 cursor-pointer" id="delete-btn">
+                  <div class="flex space-x-4 hover:bg-blue-200 hover:shadow-md bg-blue-100 px-6 py-4 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                      </svg>
+                    <h3 class="font-medium"  >Compose</h3>
+                    
+                  </div>
+                
+              </a>
+
+              
+                <a class="flex flex-row items-center space-x-4 ">
+                    <div class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z" />
+                          <path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+                        </svg>
+                    </div>
+                    <h2 class="font-regular hover:text-gray-600 cursor-pointer">Inbox</h2>
+                    <span class="bg-blue-500 px-2 rounded-full  items-center text-sm font-bold text-white">5</span>
+                </a>
+              
+              
+
+              <a>
+                  <div class="flex flex-row items-center space-x-4  ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                    <h2 class="font-regular hover:text-gray-600 cursor-pointer">Starred</h2>
+                    <span class="bg-blue-500 px-2 rounded-full  items-center text-sm font-bold text-white">8</span>
+                </div>
+              </a>
+              <a>
+                <div class="flex flex-row  items-center space-x-4  ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                    <h2 class="font-regular hover:text-gray-600 cursor-pointer">Snoozed
+                        
+                    </h2>
+                    <span class="bg-blue-500 px-2 rounded-full  items-center text-sm font-bold text-white">2</span>
+                  </div>
+              </a>
+              <a>
+                <div class="flex flex-row items-center space-x-4  ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                          </svg>
+                    </div>
+                    <h2 class="font-regular hover:text-gray-600 cursor-pointer">Sent</h2>
+                    <span class="bg-blue-500 px-2 rounded-full  items-center text-sm font-bold text-white">0</span>
+                </div>
+              </a>
+              <a>
+                <div class="flex flex-row items-center space-x-4  ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                          </svg>
+                    </div>
+                    <h2 class="font-regular hover:text-gray-600 cursor-pointer">Draft</h2>
+                    <span class="bg-blue-500 px-2 rounded-full  items-center text-sm font-bold text-white">9</span>
+                </div>
+              </a>
+
+          </div>
+
+          
+
+          </div>
+
+          <!--Sidebar ends here..-->
+
+        <!--The Body part 1 goes here..-->
+
+        
+          <div class=" flex flex-auto w-16  shadow-xl mt-10">
+                
+              <div class="flex flex-col  w-2/5  ">
+
+                  <div class="flex items-center space-x-2 h-24 bg-gray-50 rounded-tl-lg p-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z" clip-rule="evenodd" />
+                      </svg>
+                      <a class="font-bold">Inbox</a>
+                  </div>
+
+                  <div class="flex-auto overflow-y-auto bg-white">
+
+                    <a class="block border-b">
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4  bg-blue-100 p-3 hover:bg-blue-100">
+                            <div class="flex flex-row items-center space-x-2">
+                              <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a class="block border-b">
+                        <div class=" p-3 space-y-4   p-3 hover:bg-blue-100 hover:shadow-lg">
+                            <div class="flex flex-row items-center space-x-2">
+                                <input type="checkbox" class="p-2 bg-gray-200">
+                               <strong>John Muriithi</strong> 
+                               <span>6hrs</span>
+                            </div>
+                            
+                            <div class="flex flex-row items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none  text-semibold h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                                  </svg>
+                                  
+                                  <div class="flex-grow text-md text-gray-400 truncate">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dolorem placeat excepturi, distinctio fuga fugiat necessitatibus perspiciatis.
+                                     Sit aut blanditiis sequi aperiam asperiores? Inventore, animi.
+                                  </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+
+                </div>
+
+              </div>
+
+
+              
+              <!--Body part 1 ends here..-->
+
+              <!--Body part 2 goes here..-->
+
+              <div class=" flex flex-col w-full border-l border-gray-300  ">
+
+                <div class="flex flex-row flex-none h-19 justify-between p-2 bg-gray-50 rounded-tr-lg ">
+                    <div class="flex flex-col space-y-1">
+                        <strong>John Muriithi</strong>
+                        <div class="text-gray-300">Some muted text here..</div>
+                    </div> 
+                    
+                    <div class="flex flex-row items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                </div>
+                
+                <div class="  bg-gray-50 overflow-y-auto">
+                    <a class="block border-b flex p-2 justify-between">
+                        <h2 class="p-4 text-gray-400 text-lg">Invitation letter</h2>
+                        <h2 class="p-4 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd" />
+                              </svg>
+                        </h2>   
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">I am writting this letter to invite for my graduation that is 
+                             scheduled for the 1st of September 2022 at our home in Mathira, Nyeri County Kenya.
+                        </p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/profile.JPG" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/Teacher.png" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">Yeah we would like to know the time</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/profile.JPG" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-400">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received, But at what time will this be going down.</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-400">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/Teacher.png" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+                    <a class="block border-b  p-2  ">
+                        <div class="flex items-center  ">
+                            <img src="../src/imgs/team_2.jpg" class="w-8 h-8 rounded-full" alt="">
+                            <h2 class="p-4 font-bold text-gray-600">Invitation letter </h2>
+
+                            <span class="text-sm text-gray-400">  | notonmwangi@gmail.com |   </span>
+                            <span class="text-sm text-gray-400">   May 24, 2022, 1:30 PM </span>
+                        </div>
+                        <p class="block px-10 text-gray-400">This is well received</p>  
+                    </a>
+
+                </div>
+              </div>
+              <!--Body part 2 goes here..-->
+
+                <!-- Body Part 3 Goes here..-->
+              <div class="bg-blue-50 w-24 flex flex-col space-y-4 items-center pt-5 ">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z" clip-rule="evenodd" />
+                      <path fill-rule="evenodd" d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+            </div>
+
+            <!-- Body Part 3 ends here..-->
+
+          </div>
+         
+      </div>
+      
+       <!--Message box-->
+      
+      <div class="  absolute inset-0 hidden justify-center items-end " id="overlay">
+        <div class="bg-white w-96 py-2 px-3 rounded shadow-xl text-gray-800">
+            <div class="flex  justify-between items-center">
+                <h4 class="text-lg font-bold">New Message</h4>
+                <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="mt-2 text-sm ">
+                <form action="" method="post" class="flex flex-col space-y-2 ">
+                    <input type="text" class="border-b border-gray-200 focus:outline-none" placeholder="To">
+                    <input type="text" class="border-b border-gray-200 focus:outline-none" placeholder="Subject">
+                   <textarea name="" id="" cols="30" rows="15" class="focus:outline-none "></textarea>
+                </form>
+            </div>
+            <div class="mt-3 flex justify-end space-x-3">
+                <button class="px-3 py-1 rounded hover:bg-blue-300 hover:bg-opacity-50 hover:text-red-900">Discard</button>
+                <button class="px-3 py-1 bg-blue-600 text-gray-200 hover:bg-blue-800 rounded">Send</button>
+            </div>
+        </div>
+    </div>
+        <!--Message box-->   
+</body>
+<script>
+    window.addEventListener('DOMContentLoaded', () =>{
+        const overlay = document.querySelector('#overlay')
+        const delBtn = document.querySelector('#delete-btn')
+        const closeBtn = document.querySelector('#close-modal')
+
+        const toggleModal = () => {
+            overlay.classList.toggle('hidden')
+            overlay.classList.toggle('flex')
+        }
+
+        delBtn.addEventListener('click', toggleModal)
+
+        closeBtn.addEventListener('click', toggleModal)
+    })
+
+</script>
+
+</html>
+
